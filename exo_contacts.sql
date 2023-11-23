@@ -45,3 +45,16 @@ INSERT INTO pays (iso_3, nom, iso_2, nationalite) VALUES
     ('JPN', 'Japan', 'JP', 'Japanese'),
     ('AUS', 'Australia', 'AU', 'Australian'),
     ('BRA', 'Brazil', 'BR', 'Brazilian');
+
+-- Ajouter des enregistrements dans la table "contacts"
+INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, pays_iso_3) VALUES
+    ('Dupont', 'Jean', '1990-05-15', 'M', '123 Rue de la Paix', '75001', 'Paris', 'FRA'),
+    ('Smith', 'John', '1985-08-20', 'M', '456 Main Street', '10001', 'New York', 'USA'),
+    ('Müller', 'Anna', '1982-12-10', 'F', '789 Hauptstraße', '10115', 'Berlin', 'GER'),
+    ('Rossi', 'Mario', '1988-03-25', 'M', '321 Via Roma', '00185', 'Rome', 'ITA'),
+    ('García', 'Maria', '1995-07-08', 'F', '987 Calle Mayor', '28001', 'Madrid', 'ESP'),
+    ('Tremblay', 'Isabelle', '1993-02-18', 'F', '456 Rue Principale', 'H1H 1H1', 'Montreal', 'CAN'),
+    ('Jones', 'David', '1980-11-30', 'M', '789 High Street', 'SW1A 1AA', 'London', 'GBR'),
+    ('Suzuki', 'Takashi', '1987-06-12', 'M', '123 Ginza', '100-8050', 'Tokyo', 'JPN'),
+    ('Wong', 'Linda', '1992-09-05', 'F', '456 George Street', '2000', 'Sydney', 'AUS'),
+    ('Silva', 'Carlos', '1984-04-22', 'M', '789 Avenida Paulista', '01310-100', 'Sao Paulo', 'BRA');
