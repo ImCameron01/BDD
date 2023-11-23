@@ -23,3 +23,12 @@ CREATE TABLE IF NOT EXISTS pays (
     iso_2 VARCHAR(2),
     nationalite VARCHAR(50)
 );
+
+-- Création de la table "telephone"
+CREATE TABLE IF NOT EXISTS telephone (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_contact INT,
+    numero VARCHAR(50),
+    type TINYINT NOT NULL,
+    FOREIGN KEY (id_contact) REFERENCES contacts(id)
+);
