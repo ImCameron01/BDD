@@ -15,3 +15,11 @@ CREATE TABLE IF NOT EXISTS contacts (
     pays_iso_3 VARCHAR(3),
     FOREIGN KEY (pays_iso_3) REFERENCES pays(iso_3)
 );
+
+-- Création de la table "pays"
+CREATE TABLE IF NOT EXISTS pays (
+    iso_3 VARCHAR(3) PRIMARY KEY,
+    nom VARCHAR(70),
+    iso_2 VARCHAR(2),
+    nationalite VARCHAR(50)
+);
