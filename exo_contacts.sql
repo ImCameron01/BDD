@@ -1,5 +1,5 @@
 -- Création de la base de données
-CREATE DATABASE IF NOT EXISTS exo_contacts;
+CREATE DATABASE exo_contacts;
 USE exo_contacts;
 
 -- Création de la table "contacts"
@@ -32,3 +32,16 @@ CREATE TABLE IF NOT EXISTS telephone (
     type TINYINT NOT NULL,
     FOREIGN KEY (id_contact) REFERENCES contacts(id)
 );
+
+-- Ajouter des enregistrements dans la table "pays"
+INSERT INTO pays (iso_3, nom, iso_2, nationalite) VALUES
+    ('FRA', 'France', 'FR', 'French'),
+    ('USA', 'United States', 'US', 'American'),
+    ('GER', 'Germany', 'DE', 'German'),
+    ('ITA', 'Italy', 'IT', 'Italian'),
+    ('ESP', 'Spain', 'ES', 'Spanish'),
+    ('CAN', 'Canada', 'CA', 'Canadian'),
+    ('GBR', 'United Kingdom', 'GB', 'British'),
+    ('JPN', 'Japan', 'JP', 'Japanese'),
+    ('AUS', 'Australia', 'AU', 'Australian'),
+    ('BRA', 'Brazil', 'BR', 'Brazilian');
