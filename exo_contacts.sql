@@ -1,5 +1,5 @@
 -- Création de la base de données
-CREATE DATABASE exo_contacts;
+CREATE DATABASE IF NOT EXISTS exo_contacts;
 USE exo_contacts;
 
 -- Création de la table "contacts"
@@ -58,3 +58,16 @@ INSERT INTO contacts (nom, prenom, date_de_naissance, sexe, adresse, cp, ville, 
     ('Suzuki', 'Takashi', '1987-06-12', 'M', '123 Ginza', '100-8050', 'Tokyo', 'JPN'),
     ('Wong', 'Linda', '1992-09-05', 'F', '456 George Street', '2000', 'Sydney', 'AUS'),
     ('Silva', 'Carlos', '1984-04-22', 'M', '789 Avenida Paulista', '01310-100', 'Sao Paulo', 'BRA');
+
+-- Ajouter des enregistrements dans la table "telephone"
+INSERT INTO telephone (id_contact, numero, type) VALUES
+    (1, '+33 1 23 45 67 89', 1), -- 1: Mobile
+    (2, '+1 555-555-5555', 2),   -- 2: Domicile
+    (3, '+49 30 1234567', 1),
+    (4, '+39 06 12345678', 2),
+    (5, '+34 91 123 45 67', 1),
+    (6, '+1 514-555-5555', 1),
+    (7, '+44 20 1234 5678', 2),
+    (8, '+81 3-1234-5678', 1),
+    (9, '+61 2 1234 5678', 2),
+    (10, '+55 11 1234-5678', 1);
